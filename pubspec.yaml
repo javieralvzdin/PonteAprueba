@@ -1,0 +1,46 @@
+name: examinator_3000
+description: "PonteAprueba - App de Exámenes con IA"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Versiones actualizadas para evitar conflictos de dependencias cruzadas
+  sqflite: ^2.3.3+1
+  path: ^1.9.1
+  share_plus: ^10.1.3
+  path_provider: ^2.1.5
+  http: ^1.2.2
+  # Versiones compatibles con el SDK 3.2.3+
+  file_picker: ^8.1.4
+  syncfusion_flutter_pdf: ^28.1.33
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: "^0.14.1"
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#0F1216"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/icon/
+  fonts:
+    - family: Bodoni MT
+      fonts:
+        - asset: assets/fonts/BodoniMT.ttf
+        - asset: assets/fonts/BodoniMT-Bold.ttf
+          weight: 700
